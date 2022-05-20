@@ -839,7 +839,7 @@ ul {
 }
 
 .selling-points .text {
-    color: #755a42;
+    color: #595959;
     font-weight: bold;
     text-align: center;
     font-size: 0.8vw;
@@ -967,13 +967,13 @@ input[type=text]:focus {
 
 
 .hot-line-section {
-    text-align: right;
+    text-align: left;
 }
 
 .hot-line-section hr {
     border-top: 1px solid white;
     width: 70%;
-    margin: 10px 0 10px 30%;
+    margin: 10px 30% 10px 0%;
     text-align: left;
 }
 
