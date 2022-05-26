@@ -595,6 +595,21 @@ ul {
     width: 100%;
 }
 
+@media (max-width:900px) {
+    .desktop-only {
+        display: none;
+    }
+
+}
+
+@media (min-width:900px) {
+    .mobile-only {
+        display: none;
+    }
+}
+
+
+
 /*--------------------------------------------------------------
 # Section 2: Title 1
 --------------------------------------------------------------*/
@@ -607,6 +622,8 @@ ul {
 @media (max-width: 768px) {
     .main-title img {
         width: 100%;
+        padding-top: 5%;
+        padding-bottom: 5%;
     }
 }
 
@@ -722,20 +739,29 @@ ul {
 .button-center {
     margin: 0;
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 20%;
+    left: 40%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    width: 75%;
+    width: 65%;
     background-image: linear-gradient(#cca248, #ffe89a, #fff7c3, #e9d286, #fff7c3, #e1c576);
     border-radius: 60px;
 
 }
 
+@media (max-width: 900px) {
+    .button-center {
+        top: 20%;
+        left: 50%;
+        width: 50%;
+
+    }
+}
+
 .button-center button {
     background-image: linear-gradient(#fcf4b5, #fefacf, #fffcd7, #fffee4);
     width: 98%;
-    font-size: 1.35vw;
+    font-size: 0.95vw;
     font-weight: bold;
     color: #754c28;
     text-transform: uppercase;
@@ -752,10 +778,12 @@ ul {
 
 @media (max-width: 576px) {
     .services button {
-        font-size: 6.5vw;
+        font-size: 4vw;
         line-height: 1.5em;
+
     }
 }
+
 
 /*--------------------------------------------------------------
 # Section 4: Video
@@ -931,12 +959,13 @@ input[type=text]:focus {
     cursor: pointer;
     width: 100%;
     opacity: 1;
-    -webkit-transition-duration: 0.4s; /* Safari */
+    -webkit-transition-duration: 0.4s;
+    /* Safari */
     transition-duration: 0.4s;
 }
 
 .registerbtn:hover {
-    box-shadow: 0 6px 8px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
 /*--------------------------------------------------------------
@@ -978,7 +1007,7 @@ input[type=text]:focus {
 }
 
 .hot-line-section b {
-font-size: 35px;
+    font-size: 35px;
 }
 
 .strong-2 {
@@ -986,7 +1015,7 @@ font-size: 35px;
     font-size: 30px;
 }
 
-@media (max-width:577px){
+@media (max-width:577px) {
     .hot-line-section {
         text-align: left;
         margin-top: 5%;
@@ -996,7 +1025,7 @@ font-size: 35px;
     .hot-line-section p:first-child {
         margin-top: 5%;
     }
-    
+
     .hot-line-section hr {
         border-top: 1px solid white;
         width: 70%;
