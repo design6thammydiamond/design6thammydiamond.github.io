@@ -35,6 +35,7 @@ html {
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
     width: 100%;
+    overflow-x: hidden;
 }
 
 header {
