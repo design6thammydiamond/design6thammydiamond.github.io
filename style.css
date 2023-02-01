@@ -29,7 +29,7 @@
 
 }
 
-html {
+html  {
     font-size: 18px;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     -ms-text-size-adjust: 100%;
@@ -69,23 +69,11 @@ body {
     line-height: 1.6rem;
     font-size: 16px;
     width: 100%;
-        overflow-x: hidden;
+    overflow-x: hidden;
 }
 
-h1 {
-    text-transform: capitalize;
-    font-size: 40px;
-    line-height: 60px;
-    font-weight: Bold;
-    margin: 0 0 0.7rem 0;
-    color: var(--main-color);
-}
 
-@media (max-width:768px) {
-    h1 {
-        font-size: 36px;
-    }
-}
+
 
 h2 {
     font-size: 2rem;
@@ -100,12 +88,41 @@ h2 {
     line-height: 1.6;
 }
 
-@media (max-width:768px) {
+@media (max-width:576px) {
     h2 {
-        font-size: 1.4rem;
+        font-size: 1.3em;
         margin: 1.25em 0.25em 0 0.25em;
     }
 }
+
+@media (min-width:576px) and (max-width:768px) {
+    h2 {
+        font-size: 1.3em;
+        margin: 1.25em 0.25em 0 0.25em;
+    }
+}
+
+@media (min-width:768px) and (max-width:992px) {
+    h2 {
+        font-size: 1.7em;
+        margin: 1.25em 0.25em 0 0.25em;
+    }
+}
+
+@media (min-width:992px) and (max-width:1200px) {
+    h2 {
+        font-size: 2.3em;
+        margin: 1.25em 0.25em 0 0.25em;
+    }
+}
+
+@media (min-width:1200px) and (max-width:1400px) {
+    h2 {
+        font-size: 2.8em;
+        margin: 1.25em 0.25em 0 0.25em;
+    }
+}
+
 
 h4 {
     font-size: 1rem;
@@ -160,6 +177,10 @@ q:after {
     margin-right: -50%;
 }
 
+option {
+    padding: 0;
+}
+
 footer {
     width: 100%;
     padding: 20px 0 10px 0;
@@ -183,7 +204,58 @@ footer p {
     color: white !important;
     padding: 0;
     font-size: 0.95rem;
-    margin: 0;
+    margin: 0.25rem 0 0 0;
+}
+
+footer br {
+    display: none;
+}
+
+
+
+@media (max-width:390px) {
+    footer br {
+        display: block;
+    }
+}
+
+@media (min-width:768px) and (max-width:992px) {
+    footer br {
+        display: block;
+    }
+}
+
+
+@media (max-width:576px) {
+    footer p {
+        font-size: 0.95rem;
+    }
+}
+
+@media (min-width:576px) and (max-width:768px) {
+    footer p {
+        font-size: 0.4rem;
+    }
+}
+
+@media (min-width:768px) and (max-width:992px) {
+    footer p {
+        font-size: 0.59rem;
+    }
+
+
+}
+
+@media (min-width:992px) and (max-width:1200px) {
+    footer p {
+        font-size: 0.8rem;
+    }
+}
+
+@media (min-width:1200px) and (max-width:1400px) {
+    footer p {
+        font-size: 0.95rem;
+    }
 }
 
 footer hr {
@@ -207,6 +279,7 @@ footer .small-news .img {
 
 footer .small-news ul {
     padding: 0;
+    margin: 0;
 }
 
 footer .small-news li {
@@ -219,7 +292,7 @@ footer .small-news .text {
     width: 70%;
     padding: 6px 5px;
     line-height: 1.5em;
-    height: 3em;  
+    height: 3em;
     overflow: hidden;
 }
 
@@ -431,7 +504,7 @@ header .has-search .form-control-feedback {
 .service {
     background-image: url(/images/abstract-technology-digital-hi-tech-hexagons-background_41814-169.jpg);
     background-repeat: no-repeat;
-    background-size: 100% auto;
+    background-size: 100% 100%;
     background-position: center;
     padding-bottom: 1.85rem;
 }
@@ -470,7 +543,7 @@ header .has-search .form-control-feedback {
 .about-tmd {
     background-image: url(/images/about-tmd-background.jpg);
     background-repeat: no-repeat;
-    background-size: 100% auto;
+    background-size: 100% 100%;
     background-position: center;
     padding-bottom: 1.85rem;
 
@@ -489,6 +562,18 @@ header .has-search .form-control-feedback {
     text-shadow: -1px 2px 1px var(--main-color), 1px 2px 1px var(--main-color), 0px 3px 3px #8aa5d8;
 }
 
+@media (max-width: 991px) {
+
+    .about-tmd hr {
+        display: none;
+    }
+
+    .about-tmd h2 {
+        margin-bottom: 1em;
+    }
+}
+
+
 .about-tmd p {
     color: white;
     font-size: 1.05rem;
@@ -499,6 +584,13 @@ header .has-search .form-control-feedback {
         linear-gradient(var(--main-color-trans), var(--main-color-trans)) border-box;
     border: 3px solid transparent;
 }
+
+@media (max-width: 576px) {
+    .about-tmd br {
+        display: none;
+    }
+}
+
 
 /*--------------------------------------------------------------
 # FACILITIES & CONTACT FORM
@@ -670,7 +762,7 @@ header .has-search .form-control-feedback {
 .facilities {
     background-image: url(/images/abstract-technology-digital-hi-tech-hexagons-background_41814-169.jpg);
     background-repeat: no-repeat;
-    background-size: 100% auto;
+    background-size: 100% 100%;
     background-position: center;
     padding-bottom: 1.75rem;
 }
@@ -820,8 +912,43 @@ header .has-search .form-control-feedback {
 
 }
 
+@media (max-width:576px) {
+    .customers h2 {
+        font-size: 1.5em;
+        margin: 1.25em 0.25em 0 0.25em;
+    }
+}
+
+@media (min-width:576px) and (max-width:768px) {
+    .customers h2 {
+        font-size: 1.5em;
+        margin: 1.25em 0.25em 0 0.25em;
+    }
+}
+
+@media (min-width:768px) and (max-width:992px) {
+    .customers h2 {
+        font-size: 1.9em;
+        margin: 1.25em 0.25em 0 0.25em;
+    }
+}
+
+@media (min-width:992px) and (max-width:1200px) {
+    .customers h2 {
+        font-size: 2.5em;
+        margin: 1.25em 0.25em 0 0.25em;
+    }
+}
+
+@media (min-width:1200px) and (max-width:1400px) {
+    .customers h2 {
+        font-size: 3em;
+        margin: 1.25em 0.25em 0 0.25em;
+    }
+}
+
 .counter-value p {
-    font-size: 4.5rem;
+    font-size: 5.5rem;
     font-weight: bold;
     text-transform: uppercase;
     color: var(--main-color);
@@ -907,7 +1034,15 @@ header .has-search .form-control-feedback {
     padding: 2.5% 0 2.5% 0;
 }
 
-@media (max-width:768px) {
+@media (min-width:576px) and (max-width:768px) {
+    .bottom-contact {
+        background-size: cover;
+        background-position: top 0% right 50%;
+        padding: 10% 0 5% 0;
+    }
+}
+
+@media (max-width:576px) {
     .bottom-contact {
         background-size: auto 70%;
         background-position: top 0% right 50%;
@@ -915,10 +1050,29 @@ header .has-search .form-control-feedback {
     }
 }
 
+
+
 .bottom-contact p {
     color: white;
     display: block;
     padding: 0;
+}
+
+@media (min-width:992px) and (max-width:1200px) {
+    .bottom-contact p {
+        font-size: 0.77rem;
+        margin: 1.25em 0.25em 0 0.25em;
+    }
+}
+
+.bottom-contact br {
+    display:none;
+}
+
+@media (max-width:992px) {
+    .bottom-contact br {
+        display:block;
+    }
 }
 
 
@@ -931,6 +1085,12 @@ header .has-search .form-control-feedback {
 
 .bottom-contact b {
     font-size: 35px;
+}
+
+@media (max-width:992px){
+    .bottom-contact b {
+        font-size: 45px;
+    }
 }
 
 
@@ -1091,4 +1251,11 @@ header .has-search .form-control-feedback {
     transform: translateY(0rem);
     color: white;
     box-shadow: 0 0.15rem #348ed87e;
+}
+
+/*****/
+
+.rwd-line {
+    display: block;
+    text-align: center;
 }
